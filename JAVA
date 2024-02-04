@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class StringPrograms {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        char var = in.next().charAt(0);
+        System.out.println(AA(var));
+        System.out.println(AB(var));
+        System.out.println(AZ(var));
+        System.out.println(Aa(var));
+    }
+    public static char AA(char var){
+        return var;
+    }
+    public static char AZ(char var){
+        if(var == 'A'){
+        return (char) (var+25);}
+        return (char) (var-1);
+    }
+    public static char AB(char var){
+        return (char) (var+1);
+    }
+    public static char Aa(char var){
+        return (char) (var+32);
+    }
+    
+}
